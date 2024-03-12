@@ -1,0 +1,19 @@
+;/*FB_PKG_DELIM*/
+
+__d("FDSInfoChip.react",["BaseRow.react","BaseRowItem.react","CometDisabledContext","CometIcon.react","CometScreenReaderText.react","TetraText.react","react"],(function(a,b,c,d,e,f,g){"use strict";var h,i=h||(h=d("react")),j=h.useContext,k={disabled:{backgroundColor:"x1d2osyd",$$css:!0},icon:{display:"x78zum5",marginBottom:"x1jyxor1",marginStart:"x12mruv9",marginLeft:null,marginRight:null,marginEnd:"xfs2ol5",$$css:!0},label:{marginStart:"x12mruv9",marginLeft:null,marginRight:null,marginEnd:"xfs2ol5",marginTop:"xvijh9v",marginBottom:"x1ty9z65",$$css:!0},labelFontWeight:{fontWeight:"xk50ysn",$$css:!0},root:{borderTopColor:"x6zyg47",borderEndColor:"x1xm1mqw",borderBottomColor:"xpn8fn3",borderStartColor:"xtct9fg",borderTopStartRadius:"xyi19xy",borderTopEndRadius:"x1ccrb07",borderBottomEndRadius:"xtf3nb5",borderBottomStartRadius:"x1pc53ja",borderTopStyle:"x13fuv20",borderEndStyle:"xu3j5b3",borderBottomStyle:"x1q0q8m5",borderStartStyle:"x26u7qi",borderTopWidth:"xamhcws",borderEndWidth:"xol2nv",borderBottomWidth:"xlxy82",borderStartWidth:"x19p7ews",display:"x3nfvp2",marginTop:"x1kgmq87",marginEnd:"xwrv7xz",marginBottom:"xmgb6t1",marginStart:"x8182xy",paddingStart:"x1e558r4",paddingLeft:null,paddingRight:null,paddingEnd:"x150jy0e",paddingTop:"x1iorvi4",paddingBottom:"xjkvuk6",$$css:!0}},l={accent:{backgroundColor:"xwnonoy",$$css:!0},"event-date":{backgroundColor:"x1py5hnd",$$css:!0},"notification-badge":{backgroundColor:"x1cdvf7c",$$css:!0},positive:{backgroundColor:"xv9rvxn",$$css:!0},"secondary-badge":{backgroundColor:"xhazfnh",$$css:!0}};function a(a){var b=a.borderColorOverride,d=a.disabled;d=d===void 0?!1:d;var e=a.icon,f=a.label,g=a.labelIsHidden;g=g===void 0?!1:g;a=a.type;a=a===void 0?"accent":a;var h=j(c("CometDisabledContext"));d=d||h;return i.jsxs(c("BaseRow.react"),{verticalAlign:"center",xstyle:[k.root,l[a],d&&k.disabled,b],children:[e!=null&&i.jsxs(c("BaseRowItem.react"),{useDeprecatedStyles:!0,xstyle:k.icon,children:[i.jsx(c("CometIcon.react"),{color:"white",icon:e,size:12}),g&&i.jsx(c("CometScreenReaderText.react"),{text:f})]}),!g&&i.jsx(c("BaseRowItem.react"),{expanding:!0,xstyle:k.label,children:i.jsx(c("TetraText.react"),{color:"primaryOnMedia",numberOfLines:1,type:"meta4",children:i.jsx("span",{className:"xk50ysn",children:f})})})]})}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+*
+* @fullSyntaxTransform
+* @generated
+* @noflow
+* @nolint
+* @oncall lexical_web_text_editor
+* @preserve-invariant-messages
+* @preserve-whitespace
+* @preventMunge
+ */__d("useLexicalIsTextContentEmpty.prod",["LexicalText","react"],(function $module_useLexicalIsTextContentEmpty_prod(global,require,requireDynamic,requireLazy,module,exports){
+'use strict';var _require_closure_react;var e=_require_closure_react||(_require_closure_react=require("react")),f="undefined"!==typeof window&&"undefined"!==typeof window.document&&"undefined"!==typeof window.document.createElement?e.useLayoutEffect:e.useEffect;exports.useLexicalIsTextContentEmpty=function(a,c){var _e$useState=e.useState(a.getEditorState().read(require("LexicalText").$isRootTextContentEmptyCurry(a.isComposing(),c))),g=_e$useState[0],h=_e$useState[1];f(function(){return a.registerUpdateListener(function(_ref){var d=_ref.editorState;var k=a.isComposing();d=d.read(require("LexicalText").$isRootTextContentEmptyCurry(k,c));h(d);});},[a,c]);return g;};}),null);
